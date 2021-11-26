@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+:root {
+    --fondo1: #1f1d1d;
+    --fondo2: #2b2727;
+    --especial: #FABD1A;
+    --letras: #FC8838;
+    --subenla:'Secular One', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#fff;
+}
+
+
+/* ------- CONTENIDO ----- */
+.menu {
+    padding: 0 10px 30px 10px;
+    display: flex;
+}
+
+
+.cabecera {
+    background-color: #FABD1A;
+    text-transform: uppercase;
+    font-family: 'Secular one', sans-serif;
+    padding: 30px 0;
+    margin-bottom: 30px;
+    grid-column: 1/-1;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.regreso{
+    display: inline-block;
+    background-color: var(--letras);
+    border: solid 0.3px #FC8838;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.regreso a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px;
+}
+
+.regreso:hover {
+    background-color: #FABD1A;
+}
+
+.regreso a:hover {
+    color: #FC8838;
+}
+
+/* -------------- CONTENIDO ----------*/
+
+.secundario {
+    text-align: center;
+    align-items: center;
+}
+
+.secundario a {
+    display: inline;
+    padding: 20px;
+    direction: initial;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: calc(1em + 1vw);
+    font-family: var(--subenla);
+    color: var(--especial);
+}
+
+.secundario a:hover {
+    color: #FC8838;
+}
+
+
+.secundario h2 {
+    font-family: var(--subenla);
+    color: #FC8838;
+    margin-top: 20px;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.secundario p {
+    font-family: 'Lucida Sans', sans-serif;
+    font-weight: 500;
+    margin: 20px;
+}
+
+.secundario img {
+    width: 95%;
+    height: 80%;
+}
+
+
+
+@media (max-width: 991px) {
+
+    .secundario img {
+        height: 100%;
+        width: 80%;
+    }
+
+}
+
+
+/* ------------PIE ----------*/
+
+.textos {
+    text-align: center;
+    background: #FABD1A;
+    padding: 15px;
+}
+
+
+.textos h4 {
+    text-transform: uppercase;
+    font-size: calc(2em + 1vh);
+    color: #fff ;
+    text-decoration: none;
+    font-family: "Permanent Marker";
+    text-shadow: 2px 2px var(--especial);
+}
+
+.textos p {
+    letter-spacing: 1px;
+    font-size: calc(0.5em + 1vw);
+    color: rgb(117, 114, 114);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.textos a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: calc(.5em + 1vw);
+    font-family: var(--subenla);
+    color: #fff;
+}
+
+.textos a::after {
+    content: "Registrate y disfruta de los Beneficios";
+}
+
+.textos a:hover {
+    color: #0e0d0d;
+    text-transform: uppercase;
+}
+
+.textos a:hover::before {
+    content: "hace click, ya lo tenés";
+    transition: ease-in-out 0.3s;
+}
+
+.textos a:hover::after {
+    content: "";
+    transition: ease-in-out 0.3s;
+} 
+
+
+

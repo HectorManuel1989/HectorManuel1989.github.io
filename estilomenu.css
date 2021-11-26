@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+:root {
+    --fondo1: #1f1d1d;
+    --fondo2: #2b2727;
+    --especial: #FABD1A;
+    --letras: #FC8838;
+    --subenla:'Secular One', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#fff;
+}
+
+.menu {
+    padding: 0 10px 30px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    grid-gap: 10px 20px;
+}
+
+.cabecera {
+    background-color: #FABD1A;
+    text-transform: uppercase;
+    font-family: 'Secular one', sans-serif;
+    padding: 30px 0;
+    margin-bottom: 30px;
+    grid-column: 1/-1;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.regreso{
+    display: inline-block;
+    background-color: var(--letras);
+    border: solid 0.3px #FC8838;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.regreso a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px;
+}
+
+.regreso:hover {
+    background-color: #FABD1A;
+}
+
+.regreso a:hover {
+    color: #FC8838;
+}
+
+.items {
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.items:hover {
+    content: "";
+    background-color: #e6e6e6;
+}
+
+.items img {
+    position: relative;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+h1 {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.detalles {
+    padding: 20px 10px ;
+    display: grid;
+    grid-template-rows: auto, 1fr 50px;
+    grid-row-gap: 15px;
+}
+
+.detalles p {
+    color: #74726f;
+    font-size: 1em;
+    line-height: 30px;
+    font-weight: 400;
+    align-self: stretch;
+    
+}
+
+.detalles button {
+    background-color: #FABD1A;
+    border: none;
+    color: #fff;
+    height: 40px;
+    width: 180px;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 10px;
+    
+}
+
+.detalles button:hover {
+    background-color: #FC8838;
+    color: #1f1d1d;
+    text-transform: capitalize;
+    transition: all 1s;
+}
+
+.detalles button:hover::before{
+    content: "Gran eleccion...";
+}
+
+.sub-detalles {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.sub-detalles h5 {
+    font-weight: 600;
+    font-family: 'Secular one', sans-serif;
+    font-size: 1.5em;
+}
+
+.precio {
+    text-align: right;
+}

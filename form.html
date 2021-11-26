@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="estiloform.css">
+</head>
+<body>
+    <h1>Fénix Café Bar</h1>
+    <div class="contenedor">
+        <div class="amariAm">
+            <div class="box ingresar">
+                <h2>Estas listo para ingresar ?</h2>
+                <button class="ingresar">ingresar</button>
+            </div>
+            <div class="box registrar">
+                <h2>Aún no creaste tu cuenta ?</h2>
+                <button class="registrar">Registrarse</button>
+            </div>
+        </div>
+        <div class="formBox">
+            <div class="formulario iniciarForm">
+                <form action="">
+                    <h3>Iniciar</h3>
+                    <input type="text" placeholder="Usuario" required>
+                    <input type="password" placeholder="Contraseña" required>
+                    <input type="submit" value="Ingresar">
+                    <a href="#" class="olvi">Olvido su contraseña?</a>
+                    <div class="regreso">
+                        <a href="index.html">Pagina Principal</a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="formulario registrarForm">
+                <form action="">
+                    <h3>Registrarse</h3>
+                    <input type="text" placeholder="Usuario" required>
+                    <input type="text" placeholder="Email" required>
+                    <input type="password" placeholder="Contraseña" required>
+                    <input type="password" placeholder="Confirme Contraseña" required> 
+                    <input type="submit" value="Registrar">
+                    <div class="regreso">
+                        <a href="index.html">Pagina Principal</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        const ingresar = document.querySelector('.ingresar');
+        const registrar = document.querySelector('.registrar');
+        const formBox = document.querySelector('.formBox');
+        const body = document.querySelector('body');
+
+
+        registrar.onclick = function(){
+            formBox.classList.add('active')
+            body.classList.add('active')
+        }
+
+        ingresar.onclick = function(){
+            formBox.classList.remove('active')
+            body.classList.remove('active')
+        }
+
+    </script>
+</body>
+</html>
